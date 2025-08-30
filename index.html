@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosnow Motors LLC – Local Wholesale Cars</title>
+  <meta name="description" content="Local wholesale deals, hand-picked and transparent. Cosnow Motors LLC in West Jordan, UT." />
+  <link rel="icon" href="https://fav.farm/🚗" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cosnow Motors LLC – Local Wholesale Cars" />
+  <meta property="og:description" content="Local wholesale deals, hand-picked and transparent. Cosnow Motors LLC in West Jordan, UT." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Tailwind CSS via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5fbff', 100: '#e6f5ff', 200: '#cceaff', 300: '#99d6ff',
+              400: '#66c2ff', 500: '#33adff', 600: '#0a91ea', 700: '#0676bf',
+              800: '#075d96', 900: '#083e63',
+            },
+          },
+          boxShadow: { soft: '0 10px 30px rgba(2, 8, 23, 0.08)' }
+        }
+      }
+    }
+  </script>
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Top Bar -->
+  <div class="bg-slate-900 text-slate-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <p>West Jordan, UT • Local Wholesale • Transparent Deals</p>
+      <div class="space-x-4">
+        <a href="tel:+18015551234" class="hover:underline">(801) 555-1234</a>
+        <a href="mailto:sales@cosnowmotors.com" class="hover:underline">sales@cosnowmotors.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2 font-semibold text-slate-900">
+          <span class="text-2xl">🚗</span>
+          <span>Cosnow Motors LLC</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#inventory" class="hover:text-brand-700">Inventory</a>
+          <a href="#how" class="hover:text-brand-700">How It Works</a>
+          <a href="#about" class="hover:text-brand-700">About</a>
+          <a href="#faq" class="hover:text-brand-700">FAQ</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:+18015551234" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium hover:shadow-soft">Call Us</a>
+          <a href="#inventory" class="inline-flex items-center gap-2 rounded-xl bg-brand-700 text-white px-4 py-2 text-sm font-semibold hover:bg-brand-800">See Deals</a>
+        </div>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M3.75 6.75h16.5v1.5H3.75zM3.75 11.25h16.5v1.5H3.75zM3.75 15.75h16.5v1.5H3.75z"/></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 pb-4">
+        <nav class="flex flex-col gap-3 pt-3 text-sm">
+          <a href="#inventory" class="px-1">Inventory</a>
+          <a href="#how" class="px-1">How It Works</a>
+          <a href="#about" class="px-1">About</a>
+          <a href="#faq" class="px-1">FAQ</a>
+          <a href="tel:+18015551234" class="px-1">Call Us</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1920&auto=format&fit=crop" alt="Car lot" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-slate-900/60"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-24 lg:py-32">
+      <div class="max-w-2xl text-white">
+        <span class="inline-flex items-center text-xs uppercase tracking-widest bg-white/10 ring-1 ring-white/20 px-3 py-1 rounded-full">Local Wholesale</span>
+        <h1 class="mt-5 text-4xl md:text-5xl font-extrabold leading-tight">Hand-Picked Cars at Wholesale-Level Pricing</h1>
+        <p class="mt-4 text-lg text-slate-200">Small, local, and transparent. We source smart and pass the savings on to you—no pressure, no games.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#inventory" class="inline-flex items-center rounded-xl bg-white text-slate-900 px-5 py-3 font-semibold hover:shadow-soft">Browse Current Deals</a>
+          <a href="tel:+18015551234" class="inline-flex items-center rounded-xl border border-white/30 px-5 py-3 font-semibold hover:bg-white/10">Call (801) 555-1234</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Props -->
+  <section class="py-16" id="value">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Wholesale-Level Pricing</h3>
+          <p class="mt-2 text-slate-600">We buy smarter—auctions, private sellers, and off-market deals—so you pay less.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Transparent History</h3>
+          <p class="mt-2 text-slate-600">VIN lookups, inspection notes, and no-surprise fee structure. Ask us anything.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Fast, Local Pickup</h3>
+          <p class="mt-2 text-slate-600">Located in West Jordan. Simple paperwork, quick handoff, flexible scheduling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventory Preview -->
+  <section class="py-8 md:py-16 bg-white border-y border-slate-200" id="inventory">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Featured Inventory</h2>
+          <p class="text-slate-600 mt-1">A few hand-picked options available now.</p>
+        </div>
+        <a href="#" class="hidden md:inline-flex items-center text-brand-700 font-semibold hover:underline">View All</a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <!-- Card 1 -->
+        <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-soft transition">
+          <img class="w-full h-44 object-cover" src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1600&auto=format&fit=crop" alt="Sedan" />
+          <div class="p-5">
+            <h3 class="font-semibold">2017 Mercedes-Benz C300</h3>
+            <p class="text-sm text-slate-600">RWD • 2.0L Turbo • 34 MPG hwy</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-lg font-extrabold">$12,900</span>
+              <a href="tel:+18015551234" class="text-sm font-semibold text-brand-700 hover:underline">Call for details</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-soft transition">
+          <img class="w-full h-44 object-cover" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop" alt="SUV" />
+          <div class="p-5">
+            <h3 class="font-semibold">2018 Cadillac Escalade Premium Luxury</h3>
+            <p class="text-sm text-slate-600">4WD • 6.2L V8 • 420 hp</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-lg font-extrabold">$28,500</span>
+              <a href="tel:+18015551234" class="text-sm font-semibold text-brand-700 hover:underline">Call for details</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-soft transition">
+          <img class="w-full h-44 object-cover" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1600&auto=format&fit=crop" alt="Crossover" />
+          <div class="p-5">
+            <h3 class="font-semibold">2022 BMW X3 xDrive</h3>
+            <p class="text-sm text-slate-600">AWD • 2.0L Turbo • Driver-assist</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="text-lg font-extrabold">$22,400</span>
+              <a href="tel:+18015551234" class="text-sm font-semibold text-brand-700 hover:underline">Call for details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 md:hidden">
+        <a href="#" class="inline-flex items-center text-brand-700 font-semibold hover:underline">View All</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16" id="how">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <div class="text-3xl">🔎</div>
+          <h3 class="mt-3 font-semibold text-lg">1) We Source</h3>
+          <p class="mt-2 text-slate-600">Auctions, trade-ins, and vetted private sellers. We only keep what meets our standards.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <div class="text-3xl">🧰</div>
+          <h3 class="mt-3 font-semibold text-lg">2) We Inspect</h3>
+          <p class="mt-2 text-slate-600">Notes on condition, test drives, and safety checks. Clear history and disclosures.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft">
+          <div class="text-3xl">📝</div>
+          <h3 class="mt-3 font-semibold text-lg">3) Simple Paperwork</h3>
+          <p class="mt-2 text-slate-600">Straightforward pricing. Fast pickup in West Jordan. We can help with temp permits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">What Buyers Say</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <figure class="bg-white rounded-2xl p-6 shadow-soft">
+          <blockquote class="text-slate-700">“Easiest car deal I’ve ever done. Fair price and zero pressure.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-500">— Alex R.</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6 shadow-soft">
+          <blockquote class="text-slate-700">“They showed me the inspection notes and Carfax before I even asked.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-500">— Morgan S.</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6 shadow-soft">
+          <blockquote class="text-slate-700">“Local, responsive, and exactly as described.”</blockquote>
+          <figcaption class="mt-3 text-sm text-slate-500">— Daniel K.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-16" id="about">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">About Cosnow Motors LLC</h2>
+        <p class="mt-4 text-slate-600">We’re a small, local dealer focused on value and transparency. Each car is hand-picked with clear notes on condition so you can buy confidently without the big-lot markups.</p>
+        <ul class="mt-4 space-y-2 text-slate-600 list-disc list-inside">
+          <li>Licensed wholesale-oriented dealer in West Jordan, Utah</li>
+          <li>By-appointment showings • no high-pressure sales</li>
+          <li>VIN history reports and inspection notes available</li>
+        </ul>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#inventory" class="inline-flex items-center rounded-xl bg-brand-700 text-white px-5 py-3 font-semibold hover:bg-brand-800">See Current Deals</a>
+          <a href="tel:+18015551234" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:shadow-soft">Call (801) 555-1234</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop" alt="SUV on road" class="w-full h-72 md:h-96 object-cover rounded-3xl shadow-soft" />
+        <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-soft border border-slate-200">
+          <p class="text-sm font-medium">By-appointment • West Jordan, UT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white border-t border-slate-200" id="faq">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Frequently Asked Questions</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <summary class="font-semibold cursor-pointer">Do you take trade-ins?</summary>
+          <p class="mt-3 text-slate-600">Yes—share a few photos and the VIN, and we’ll give you a quick number.</p>
+        </details>
+        <details class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <summary class="font-semibold cursor-pointer">Can I get a pre-purchase inspection?</summary>
+          <p class="mt-3 text-slate-600">Absolutely—happy to coordinate a local PPI at your shop of choice.</p>
+        </details>
+        <details class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <summary class="font-semibold cursor-pointer">Do you charge dealer fees?</summary>
+          <p class="mt-3 text-slate-600">We keep fees minimal and transparent—ask us to see a sample out-the-door quote.</p>
+        </details>
+        <details class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <summary class="font-semibold cursor-pointer">Where are you located?</summary>
+          <p class="mt-3 text-slate-600">West Jordan, Utah. We’ll share the exact address once we set an appointment.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-semibold text-white text-lg">
+          <span class="text-2xl">🚗</span>
+          <span>Cosnow Motors LLC</span>
+        </div>
+        <p class="mt-3 text-slate-400">Local wholesale cars • West Jordan, UT</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Explore</h4>
+        <ul class="mt-3 space-y-2 text-slate-400">
+          <li><a href="#inventory" class="hover:text-white">Inventory</a></li>
+          <li><a href="#how" class="hover:text-white">How It Works</a></li>
+          <li><a href="#about" class="hover:text-white">About</a></li>
+          <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Contact</h4>
+        <ul class="mt-3 space-y-2 text-slate-400">
+          <li><a href="tel:+18015551234" class="hover:text-white">(801) 555-1234</a></li>
+          <li><a href="mailto:sales@cosnowmotors.com" class="hover:text-white">sales@cosnowmotors.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-slate-500">© <span id="year"></span> Cosnow Motors LLC • All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Cosnow Motors LLC",
+    "image": "https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1600&auto=format&fit=crop",
+    "address": {"@type": "PostalAddress", "addressLocality": "West Jordan", "addressRegion": "UT"},
+    "telephone": "+1-801-555-1234",
+    "areaServed": "Utah",
+    "url": "https://example.netlify.app"
+  }
+  </script>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    // Year stamp
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
